@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500&display=swap');
+
+$color-background: #172540;
+$color-primary: #F2A444;
+$color-highlight: rgb(94, 136, 191);
+
+.sidebar {
+	border-left: 1px solid #2c3f59;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+}
+
+.navigation {
+	&__item-link {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		padding: 5px 0;
+		width: 100%;
+
+		&::before {
+			background-image: radial-gradient($color-highlight 0.45px, rgb(23, 37, 64) 0.45px);
+			background-size: 9px 9px;
+			content: '';
+			height: 30px;
+			margin-left: -20px;
+			margin-right: 10px;
+			width: 30px;
+		}
+
+		&--active {
+			color: $color-primary;
+			font-weight: 500;
+
+			&::before {
+				background-image: radial-gradient($color-primary 0.45px, rgb(23, 37, 64) 0.45px);
+			}
+		}
+	}
+}
+
+.avatar {
+    border-top: calc(35vh - 350px) solid #fff;
+}
+
+.dots {
+	background-size: 9px 9px;
+	margin-bottom: 50px;
+	padding: 20px 60px;
+    background-image: radial-gradient($color-highlight 0.45px, rgb(23, 37, 64) 0.45px);
+}
+
+.welcome,
+.contact {
+	height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.highlight {
+	background-color: $color-primary;
+	color: $color-background;
+	font-weight: bold;
+	padding: 0 5px;
+}
+
+// General 
+
+p {
+	color: #bebebe;
+}
+
+h2 {
+	&::before,
+	&::after {
+		color: $color-primary;
+		content: '<';
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 800;
+		margin-right: 10px;
+		transform: translateY(-4px);
+	}
+
+	&::after {
+		content: '/>';
+		margin-left: 5px;
+	}
+}
+
+
+
+
+
+.list-skills {
+    margin: 0;
+    padding: 0;
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	row-gap: 15px;
+	column-gap: 5px;
+
+	li {
+		padding: 0;
+		display: flex;
+		font-size: 20px;
+
+		svg {
+			color: #f2a444;
+			margin-right: 10px;
+		}
+
+		&::before {
+			display: none;
+		}
+	}
+}
+
+.prestashop-icon {
+    background: #f2a444;
+    border-radius: 50%;
+}
+
+// Swiper

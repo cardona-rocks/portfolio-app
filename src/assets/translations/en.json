@@ -1,0 +1,46 @@
+{
+    "language": "en",
+    "dark_mode": "Dark mode",
+    "navigation": {
+        "about": "About me",
+        "skills": "Skills",
+        "experience": "Experience",
+        "portfolio": "Portfolio",
+        "contact_me": "Contact me"
+    },
+    "general": {
+        "explore": "Explore",
+        "follow_me": "Follow me",
+        "download_cv": "Download CV"
+    },
+    "home": {
+        "greeting": "Hello, I'm...",
+        "introduce": "Sergio Cardona, Full-stack Web developer"
+    },
+    "skills": {
+        "title": "Skills",
+        "content": "My skills are distributed in the development of ecommerce on Shopify, custom web applications in Python / Django, PHP and the creation of custom plugins for Open Source CMS such as Prestashop, Magento 2, Wordpress and others. as well as the layout of corporate sites in HTML, SASS, JS, etc."
+    },
+    "experience": {
+        "title": "Work experience",
+        "job_grupo_title": "Grupo Cartagena",
+        "job_grupo_date": "2021 - At present",
+        "job_grupo_description": "Senior developer in charge of the development of ecommerce solutions in Shopify, huge features like entire sites development, complex business rules and also small but nicely features.",
+        "job_sigma_title": "Sigma Studios",
+        "job_sigma_date": "2013 - 2021",
+        "job_sigma_description": "Fullstack developer specialized in the build of ecommerce in Shopify, Prestashop, Magento 2, and WooCommerce, Development of web applications in Django with different needs in which it stands out: Job board, custom CRMs, bet management, administrative platform for third-party ads, etc.",
+        "job_quarto_title": "Quarto Util",
+        "job_quarto_date": "2008 - 2012",
+        "job_quarto_description": "Co-founder of the creative agency Quarto Útil, Lead of development department and developer of many websites using Wordpress and custom web applications in PHP.",
+        "job_ryt_title": "Revisores & Tributarios de Antioquia",
+        "job_ryt_date": "2006 - 2007",
+        "job_ryt_description": "Responsible for the creation and maintenance of the corporate website of the company, developing custom web applications in PHP for the job bank, library of tax documents, and course and student management."
+    },
+    "projects": {
+        "title": "Some projects"
+    },
+    "contact": {
+        "title": "Contact me",
+        "content": "Is very easy contact to me, just fill the following form or just email me to dev@cardona.roks and I will be contact with you as soon as possible."
+    }
+}

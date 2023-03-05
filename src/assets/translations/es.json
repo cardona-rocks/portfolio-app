@@ -1,0 +1,22 @@
+{
+    "language": "en",
+    "dark_mode": "Dark mode",
+    "navigation": {
+        "about": "About me",
+        "skills": "Skills",
+        "experience": "Experience",
+        "portfolio": "Portfolio",
+        "contact_me": "Contact me"
+    },
+    "home": {
+        "greeting": "Hello, I'm...",
+        "introduce": "Sergio Cardona, Full-stack Web developer"
+    },
+    "skills": {
+        "title": "Skills",
+        "content": "My skills are distributed in the development of ecommerce on Shopify, custom web applications in Python / Django, PHP and the creation of custom plugins for Open Source CMS such as Prestashop, Magento 2, Wordpress and others. as well as the layout of corporate sites in HTML, SASS, JS, etc."
+    },
+    "experience:": {
+        "title": "Work experience"
+    }
+}
