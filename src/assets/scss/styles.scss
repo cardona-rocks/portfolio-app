@@ -53,10 +53,10 @@ $color-highlight: rgb(94, 136, 191);
 
 .welcome,
 .contact {
-	height: 100vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
 }
 
 .highlight {
@@ -64,6 +64,15 @@ $color-highlight: rgb(94, 136, 191);
 	color: $color-background;
 	font-weight: bold;
 	padding: 0 5px;
+}
+
+.swiper-slide {
+	opacity: .15;
+	transition: opacity .3s;
+
+	&.swiper-slide-active {
+		opacity: 1;
+	}
 }
 
 // General 

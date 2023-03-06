@@ -1,4 +1,5 @@
-import { Stack, Grid, Button, Typography } from '@mui/material';
+import { Stack, Button, Typography } from '@mui/material';
+import Grid from '@mui/material/Unstable_Grid2'; 
 import { Download } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 
@@ -26,7 +27,7 @@ export const Home = () => {
 							{/* {t('home.introduce')} */}
 							Sergio Cardona, <br/> Full-stack Web developer
 						</Typography>
-						<Button>
+						<Button variant="outlined">
 							<Download /> {t('general.download_cv')}
 						</Button>
 					</Stack>

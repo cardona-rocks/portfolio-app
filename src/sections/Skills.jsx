@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { Stack, Grid, Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
+import Grid from '@mui/material/Unstable_Grid2'; 
 import { SkillsIcons } from './SkillsIcons';
 
 export const Skills = () => {
@@ -15,7 +16,9 @@ export const Skills = () => {
 		>
 			<Grid container spacing={0}>
 				<Grid xs={10}>
-					<Typography variant="h2" gutterBottom>
+					<Typography variant="h2" style={{
+						marginBottom: 30
+					}}>
 						{t('skills.title')}
 					</Typography>
 					<Typography paragraph>

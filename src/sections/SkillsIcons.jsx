@@ -1,7 +1,6 @@
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
+import { useTranslation } from 'react-i18next';
+import { Typography, List, ListItem } from '@mui/material';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Typography } from '@mui/material';
 import { 
 	faAws, 
 	faBootstrap, 
@@ -40,13 +39,13 @@ import {
 	WoocommerceIcon,
 } from '../assets/icons';
 
-
 export const SkillsIcons = () => {
+
+	const { t } = useTranslation();
+
 	return(
 		<>
-			<Typography variant="h3" gutterBottom style={{ marginTop: 50 }}>
-				Main Skills
-			</Typography>
+			<Typography variant="h3" style={{ marginTop: 50, marginBottom: 20 }}>{t('skills.main_skills')}</Typography>
 			<List className='list-skills'>
 				<ListItem>
 					<FontAwesomeIcon icon={faShopify} />
@@ -101,11 +100,7 @@ export const SkillsIcons = () => {
 					<Typography variant="body1">Figma</Typography>
 				</ListItem>
 			</List>
-
-
-			<Typography variant="h3" gutterBottom style={{ marginTop: 50 }}>
-				Other skills
-			</Typography>
+			<Typography variant="h3" style={{ marginTop: 50, marginBottom: 20 }}>{t('skills.other_skills')}</Typography>
 			<List className='list-skills'>
 				<ListItem>
 					<MongoIcon viewBox="0 0 128 128"/>
@@ -123,7 +118,6 @@ export const SkillsIcons = () => {
 					<FontAwesomeIcon icon={faDigitalOcean} />
 					<Typography variant="body1">Digital ocean</Typography>
 				</ListItem>
-
 				<ListItem>
 					<FontAwesomeIcon icon={faNpm} />
 					<Typography variant="body1">NPM</Typography>
@@ -189,9 +183,6 @@ export const SkillsIcons = () => {
 					<Typography variant="body1">Illustrator</Typography>
 				</ListItem>
 			</List>
-			
-			
-	
 		</>
 	)
 }

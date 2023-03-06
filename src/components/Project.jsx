@@ -1,36 +1,30 @@
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Chip from '@mui/material/Chip';
+import { Card, CardActions, CardContent, CardMedia, Button, Typography, Chip, Link } from '@mui/material';
 
+export const Project = ({ media, title, content, technologies, link }) => {
 
-export const Project = () => {
 	return (
 		<Card elevation={3}>
 			<CardMedia
 				component="img"
-				alt="green iguana"
+				alt="Project media"
 				height="300"
-				image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+				image={ media }
 			/>
-			<CardContent>
-				<Typography gutterBottom variant="h5" component="div">
-					Mushroom Revival
-				</Typography>
-				<Typography variant="body2" color="text.primary" style={{ marginTop: 25, marginBottom: 25}}>
-					Full development on Shopify 2.0 from Dawn starter theme, Sidecart gamification and control subscriptions with Recharge.
-				</Typography>
-				<Chip label="Shopify 2.0" />
-				<Chip label="jQuery" />
-				<Chip label="Sass" />
-				<Chip label="Gulp" />
-				<Chip label="Github" />
+			<CardContent style={{
+				minHeight: 250
+			}}>
+				<Typography variant="h5" component="div">{ title }</Typography>
+				<Typography variant="body2" color="text.primary" style={{ marginTop: 25, marginBottom: 25}}>{ content }</Typography>
+				{
+					technologies.map((item, k) => (
+						<Chip key={item} label={item} />
+					))
+				}
 			</CardContent>
 			<CardActions>
-				<Button size="small">https://mushroomrevival.com</Button>
+			<Link target="_blank" href={ link }>
+				{ link }
+			</Link>
 			</CardActions>
 		</Card>
 	)

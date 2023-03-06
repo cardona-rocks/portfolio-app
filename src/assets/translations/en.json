@@ -19,7 +19,9 @@
     },
     "skills": {
         "title": "Skills",
-        "content": "My skills are distributed in the development of ecommerce on Shopify, custom web applications in Python / Django, PHP and the creation of custom plugins for Open Source CMS such as Prestashop, Magento 2, Wordpress and others. as well as the layout of corporate sites in HTML, SASS, JS, etc."
+        "content": "My skills are distributed in the development of ecommerce on Shopify, custom web applications in Python / Django, PHP and the creation of custom plugins for Open Source CMS such as Prestashop, Magento 2, Wordpress and others. as well as the layout of corporate sites in HTML, SASS, JS, etc.",
+        "main_skills": "Main skills",
+        "other_skills": "Other skills"
     },
     "experience": {
         "title": "Work experience",

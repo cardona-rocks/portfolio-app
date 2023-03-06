@@ -1,5 +1,6 @@
 import { Element } from 'react-scroll'
-import { ThemeProvider, CssBaseline, Container, Grid } from '@mui/material';
+import { ThemeProvider, CssBaseline, Container } from '@mui/material';
+import Grid from '@mui/material/Unstable_Grid2'; 
 import { darkTheme } from './assets/theme';
 import { Home, Skills, Experience, Projects, Contact } from './sections';
 import { Sidebar } from './components';
