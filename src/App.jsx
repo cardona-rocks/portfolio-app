@@ -15,7 +15,6 @@ export default function BasicGrid() {
 						className="sidebar"
 						xs={12} 
 						md={4} 
-						style={{ paddingLeft: 36 }}
 					>
 						<Sidebar />
 					</Grid>

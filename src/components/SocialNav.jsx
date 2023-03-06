@@ -8,11 +8,14 @@ const SocialNav = () => {
 
 	return (
 		<>
-			<Typography variant="h3" style={{
+			<Typography variant="h3" 
+			className='xs-hidden'
+			style={{
 				marginTop: 30,
 				marginBottom: 30
 			}}>{t('general.follow_me')}</Typography>
 			<Stack
+				className='social-nav'
 				direction="row"
 				divider={ <Divider color="#fff" orientation="vertical" flexItem /> }
 				spacing={ 2 }

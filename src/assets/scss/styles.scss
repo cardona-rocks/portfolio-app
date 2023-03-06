@@ -7,8 +7,16 @@ $color-highlight: rgb(94, 136, 191);
 .sidebar {
 	border-left: 1px solid #2c3f59;
 	height: 100vh;
+	padding-left: 36px !important;
 	position: sticky;
 	top: 0;
+
+	@media (max-width: 959px) {
+		padding-left: 0 !important;
+		position: relative;
+		height: auto;
+		border-left: 0;
+	}
 }
 
 .navigation {
@@ -38,10 +46,39 @@ $color-highlight: rgb(94, 136, 191);
 			}
 		}
 	}
+
+	@media (max-width: 959px) {
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&__item-link {
+			padding: 5px 20px 5px 10px;
+		}
+	}
+
+}
+@media (max-width: 959px) {
+	.xs-hidden {
+		display: none;
+	}
+
+	.social-nav {
+		justify-content: center;
+		margin-bottom: -50px;
+	}
 }
 
 .avatar {
     border-top: calc(35vh - 350px) solid #fff;
+	max-width: 350px;
+	margin-bottom: 10px;
+	width: 90%;
+
+	@media (max-width: 959px) {
+		width: 100%;
+	}
 }
 
 .dots {
@@ -49,6 +86,11 @@ $color-highlight: rgb(94, 136, 191);
 	margin-bottom: 50px;
 	padding: 20px 60px;
     background-image: radial-gradient($color-highlight 0.45px, rgb(23, 37, 64) 0.45px);
+	width: 100%;
+
+	@media (max-width: 959px) {
+		padding: 20px 30px;
+	}
 }
 
 .welcome,
@@ -57,6 +99,12 @@ $color-highlight: rgb(94, 136, 191);
 	display: flex;
 	justify-content: center;
 	min-height: 100vh;
+
+	@media (max-width: 959px) {
+		padding-bottom: 100px;
+		padding-top: 100px;
+		min-height: auto;
+	}
 }
 
 .highlight {
@@ -103,7 +151,7 @@ h2 {
 
 
 
-.list-skills {
+.skill-list {
     margin: 0;
     padding: 0;
 	display: grid;
@@ -111,19 +159,27 @@ h2 {
 	row-gap: 15px;
 	column-gap: 5px;
 
-	li {
-		padding: 0;
+	&__item {
+		padding: 0 !important;
 		display: flex;
 		font-size: 20px;
 
 		svg {
-			color: #f2a444;
+			color: $color-primary;
 			margin-right: 10px;
 		}
 
 		&::before {
 			display: none;
 		}
+	}
+
+	@media (max-width: 959px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media (max-width: 449px) {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 

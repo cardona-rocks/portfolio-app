@@ -19,7 +19,7 @@
     },
     "skills": {
         "title": "Skills",
-        "content": "My skills are distributed in the development of ecommerce on Shopify, custom web applications in Python / Django, PHP and the creation of custom plugins for Open Source CMS such as Prestashop, Magento 2, Wordpress and others. as well as the layout of corporate sites in HTML, SASS, JS, etc.",
+        "content": "My skills are distributed in the development of ecommerce on Shopify, complex & simple components in Vanilla JS, some React & NodeJs Stuffs, custom web applications in Python / Django, PHP and the creation of custom plugins for Open Source CMS such as Prestashop, Magento 2, Wordpress and others. as well as the layout of corporate sites in HTML, SASS, JS, etc.",
         "main_skills": "Main skills",
         "other_skills": "Other skills"
     },
@@ -43,6 +43,7 @@
     },
     "contact": {
         "title": "Contact me",
-        "content": "Is very easy contact to me, just fill the following form or just email me to dev@cardona.roks and I will be contact with you as soon as possible."
+        "content": "Is very easy contact to me, just fill the following form or just email me to dev@cardona.roks and I will be contact with you as soon as possible.",
+        "button": "Send message"
     }
 }

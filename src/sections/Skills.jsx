@@ -12,10 +12,10 @@ export const Skills = () => {
 			direction="row" 
 			spacing={0} 
 			className='page'
-			style={{ paddingBottom: 250 }}
+			style={{ paddingBottom: 150 }}
 		>
 			<Grid container spacing={0}>
-				<Grid xs={10}>
+				<Grid md={10}>
 					<Typography variant="h2" style={{
 						marginBottom: 30
 					}}>

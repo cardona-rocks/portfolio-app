@@ -4,7 +4,10 @@ export default {
     fontFamily: ['Heebo', 'sans-serif'].join(","),
     h1: {
         fontWeight: 700,
-        fontSize: 60,
+        fontSize: 40,
+        '@media (min-width:700px)': {
+            fontSize: 60
+        },
     },
     h2: {
         fontWeight: 500,

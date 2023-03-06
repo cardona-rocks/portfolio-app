@@ -9,10 +9,14 @@ const Navbar = () => {
 
 	return (
 		<>
-		<Typography variant="h3" style={{
+		<Typography variant="h3" 
+		className='xs-hidden'
+		style={{
 				marginTop: 30,
 				marginBottom: 30
-			}}>{t('general.explore')}</Typography>
+		}}>{t('general.explore')}</Typography>
+
+
 		<Stack direction="row" spacing={2}>
 			<MenuList 
 				className='navigation' 

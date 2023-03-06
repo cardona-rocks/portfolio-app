@@ -31,11 +31,20 @@ export const Projects = () => {
 					</Stack>
 
 					<Swiper
-						spaceBetween={30}
-						slidesPerView={2}
+			
 						centeredSlides={true}
 						loop={true}
 						freeMode={true}
+						breakpoints={{
+							0: {
+								slidesPerView: 1,
+								spaceBetween: 20,
+							},
+							700: {
+								slidesPerView: 2,
+								spaceBetween: 30,
+							}
+						}}
 					>
 						{ projectList.map((item, k) => (
 							<SwiperSlide key={item.id}>

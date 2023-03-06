@@ -12,10 +12,10 @@ export const Experience = () => {
 			direction="row" 
 			spacing={0} 
 			className='page'
-			style={{ paddingBottom: 250 }}
+			style={{ paddingBottom: 150 }}
 		>
 			<Grid container spacing={0}>
-				<Grid xs={10}>
+				<Grid md={10}>
 					<Typography variant="h2">{t('experience.title')}</Typography>
 					<Job 
 						title={t('experience.job_grupo_title')}

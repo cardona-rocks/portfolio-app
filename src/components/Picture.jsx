@@ -6,10 +6,7 @@ const Picture = () => {
 			alt="Picture of Sergio Andrés Cardona Areiza, Full-stack developer"
 			className="avatar"
 			src={Avatar}
-			style={{ 
-				maxWidth: 350,
-				marginBottom: 10
-			}} />
+		/>
 	)
 }
 
